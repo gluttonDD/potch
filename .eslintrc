@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "jsx-control-statements",
+    "react-hooks"
+  ],
+  "extends": [
+    "eslint-config-umi",
+    "plugin:jsx-control-statements/recommended"
+  ],
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}

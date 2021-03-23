@@ -1,0 +1,119 @@
+@import "~themes/vars";
+
+.login {
+  height: 100vh;
+  .loginArea {
+    background-color: #ffffff;
+    height: calc(100vh - 36px);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .formArea {
+      width: 348px;
+      button {
+        width: 100%;
+      }
+      .form {
+        :global {
+          .ant-input-group-addon {
+            width: 32px;
+            height: 32px;
+            border-radius: 0;
+          }
+          .ant-input {
+            font-size: 12px;
+            border-radius: 0;
+            opacity: 0.7;
+            height: 32px;
+          }
+        }
+      }
+      .btnWrap {
+        margin-top: 12px;
+        .loginBtn {
+          height: 38px;
+          font-size: 14px;
+          color: #FFFFFF;
+          letter-spacing: 1.8px;
+          background-color: #144848;
+          border-radius: 2px;
+          border: none;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 36px;
+    line-height: 36px;
+    background: #EFEFEF;
+    font-size: 12px;
+    color: #9B9B9B;
+    text-align: center;
+  }
+}
+
+
+/*适应高度*/
+@media screen and (min-height: 901px){
+  .login {
+    .center {
+      background-size: 502px 220px;
+      .coreLogo {
+        width: 379px;
+        height: 65px;
+      }
+      .systemName {
+        font-size: 48px;
+        line-height: 50px;
+        letter-spacing: 3px;
+        margin-top: 30px;
+      }
+      .subTitle {
+        font-size: 28px;
+        line-height: 30px;
+        letter-spacing: 1.9px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    .loginArea {
+      height: calc(68vh - 31px - 64px);
+      padding-top: 60px;
+      .formArea {
+        width: 500px;
+        .form {
+          :global {
+            .ant-input-group-addon {
+              width: 54px;
+              height: 54px;
+            }
+            .ant-input {
+              height: 54px;
+              font-size: 18px;
+            }
+          }
+          .iconS {
+            font-size: 24px;
+            color: #fff;
+          }
+        }
+        .btnWrap {
+          margin-top: 21px;
+          .loginBtn {
+            height: 64px;
+            font-size: 26px;
+            letter-spacing: 3px;
+          }
+        }
+      }
+    }
+    .footer {
+      height: 64px;
+      line-height: 64px;
+      font-size: 16px;
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "umi/babel"
+  ],
+  "plugins": [
+    [
+      "jsx-control-statements",
+      "babel-plugin-module-resolver",
+      "lodash"
+    ]
+  ]
+}

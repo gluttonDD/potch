@@ -1,0 +1,97 @@
+@import "../themes/vars.less";
+@content-width: 1000px;
+
+.normal {
+  font-family: Georgia, sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: -1px;
+  background: darkslateblue;
+  padding: .6em 0;
+  color: white;
+  margin: 0;
+}
+
+
+.user-info {
+  margin: 0 40px;
+  float: right;
+  text-align: center;
+
+  a {
+    color: #666666;
+  }
+
+  .organization_name {
+    padding-right: 20px;
+  }
+
+  .user-interval {
+    padding: 0 10px;
+  }
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 48px;
+  padding-left: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.endeavour_page {
+  :global {
+    .ant-layout-header {
+      min-width: @content-width;
+      height: 48px;
+      padding: 0 16px;
+      box-shadow: 0 0 4px #888888;
+    }
+
+    .ant-menu-item a {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .ant-layout-content {
+      min-width: @content-width;
+      padding: 16px;
+    }
+
+    .ant-layout-footer {
+      width: @content-width;
+      padding: 16px;
+      font-size: 12px;
+      text-align: center;
+      color: #999;
+    }
+
+    .ant-back-top {
+      right: 26px;
+    }
+  }
+
+  .affixTel {
+    position: fixed;
+    bottom: 100px;
+    right: 26px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .endeavour_content {
+    min-width: @content-width;
+    padding: 16px;
+    min-height: 280px;
+    height: 100%;
+  }
+}

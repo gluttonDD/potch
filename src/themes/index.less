@@ -1,0 +1,35 @@
+@import "../themes/vars";
+
+body {
+  height: 100%;
+  background-color: #F0F2F5;;
+}
+
+p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+:global {
+  //表格ant-table
+  .ant-table-small {
+    border: none;
+  }
+  .ant-table-small > .ant-table-content > .ant-table-body {
+    margin: 0;
+  }
+  .ant-table {
+    .ant-table-thead > tr > th {
+      text-align: center;
+      background-color: #fafafa !important;
+    }
+    .ant-table-tbody > tr > td {
+      text-align: center;
+    }
+  }
+
+}

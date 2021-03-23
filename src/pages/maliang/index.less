@@ -1,0 +1,188 @@
+.materialsManage {
+  .templateArea {
+    background: #fff;
+    padding: 8px;
+    margin-right: 3px;
+    min-height: calc(100vh - 64px - 64px);
+    width: 200px;
+    .templateList {
+      .titleArea {
+        padding: 10px;
+        border-bottom: 1px solid #888;
+        display: flex;
+        justify-content: space-between;
+        .title {
+          font-weight: bold;
+        }
+      }
+      .temListRow {
+        padding-bottom: 10px;
+      }
+      .thumbnail {
+        width: 80px;
+        height: 100px;
+        cursor: pointer;
+        overflow: hidden;
+        border: 1px solid #e0e5ea;
+        border-radius: 4px;
+        &:hover {
+
+        }
+      }
+    }
+  }
+  .templateEditArea {
+    .materialTitle {
+      text-align: center;
+    }
+    .tips {
+      font-size: 12px;
+      color: red;
+      padding-left: 20px;
+    }
+    .templateBgArea {
+      position: relative;
+      margin: 0 auto;
+      cursor: pointer;
+      .box {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 2px solid red;
+        cursor: move;
+      }
+      .textBox {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-user-select: none;
+        -moz-user-select:none;
+        -o-user-select:none;
+        -ms-user-select:none;
+      }
+      .imageBox {
+        position: absolute;
+        :global{
+          .ant-upload-picture-card-wrapper {
+            height: inherit;
+            .ant-upload-select-picture-card {
+              width: 100%;
+              height:inherit;
+              margin: 0;
+            }
+            .ant-upload-list-picture-card {
+              height: inherit;
+            }
+          }
+        }
+      }
+      .deleteButton {
+        position: absolute;
+        top: -24px;
+        right: 0;
+      }
+    }
+  }
+  .settingArea {
+    background: #fff;
+    padding: 8px;
+    margin-left: 3px;
+    min-height: calc(100vh - 64px - 64px);
+    .settingTitle {
+      padding: 8px;
+      font-weight: bold;
+    }
+    .temUpload {
+      :global {
+        .ant-upload {
+          .ant-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .operArea {
+      border: 1px solid #bbbbbb;
+      padding: 4px;
+      margin-top: 10px;
+      .checkboxButtonGroup {
+        padding-top: 10px;
+        :global {
+          .ant-checkbox-group {
+            .ant-checkbox-wrapper {
+              position: relative;
+              display: inline-block;
+              height: 32px;
+              margin: 0;
+              padding: 0 8px;
+              color: rgba(0, 0, 0, 0.65);
+              font-size: 12px;
+              line-height: 32px;
+              background: #fff;
+              border: 1px solid #eee;
+              border-top-width: 1.02px;
+              border-left-width: 0;
+              cursor: pointer;
+              transition: color 0.3s, background 0.3s, border-color 0.3s, box-shadow 0.3s;
+              &:first-child {
+                border-left: 1px solid #eee;
+                border-radius: 4px 0 0 4px;
+              }
+              &:last-child {
+                border-radius: 0 4px 4px 0;
+              }
+              &:hover {
+                color: #1890ff;
+              }
+              .ant-checkbox {
+                .ant-checkbox-inner {
+                  display: none;
+                }
+                &:hover {
+                  color: #1890ff;
+                }
+              }
+            }
+            .ant-checkbox-wrapper-checked {
+              color: #1890ff;
+              border-color: #1890ff;
+              border-left: 1px solid #1890ff !important;
+              .ant-checkbox-checked {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .colorPicker {
+      .swatch {
+        background: #888;
+        border-radius: 4px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+        display: inline-block;
+        cursor: pointer;
+        width: 200px;
+        height: 22px;
+      }
+      .popover {
+        position: absolute;
+        z-index: 2;
+        top: 292px;
+      }
+      .cover {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    .btnGroup {
+      padding-top: 20px;
+    }
+  }
+}
